@@ -1,0 +1,206 @@
+
+
+
+
+/* -------------------------------
+   6.0 Widgets
+------------------------------- */
+
+/* 6.1 Widget - General Setting (Added in v4.2) */
+
+.widget {
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #fff;
+	color: inherit;
+	padding: 0;
+	border-radius: 0;
+}
+.widget.widget-rounded {
+	border-radius: 4px;
+}
+.widget-header {
+	display: table;
+	width: 100%;
+}
+.widget-header-title,
+.widget-header-icon {
+	display: table-cell;
+	padding: 10px 15px;
+}
+.widget-header-title {
+	font-size: 12px;
+	margin: 0;
+	line-height: 20px;
+	width: 100%;
+}
+.widget-header-icon {
+	width: 1%;
+}
+.widget-header-icon + .widget-header-icon {
+	padding-left: 0;
+}
+.widget-body {
+	padding: 15px;
+}
+.widget.inverse-mode {
+	background: #2d353c;
+}
+.widget.inverse-mode .vertical-box.with-border-top,
+.widget.inverse-mode .vertical-box.with-grid > .vertical-box-column + .vertical-box-column {
+	border-color: #575d63;
+}
+.widget.inverse-mode hr {
+	background: #575d63;
+}
+
+
+/* 6.2 Widget - Media Message */
+
+.media-messaging .media {
+	padding: 15px;
+}
+.media-messaging .media:first-child {
+	padding-top: 0;
+}
+.media-messaging .media:last-child {
+	padding-bottom: 0;
+}
+.media-messaging .media p {
+	margin: 0;
+}
+.media-messaging .media + .media {
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+
+/* 6.3 Widget - Stats */
+
+.widget.widget-stats {
+	position: relative;
+	color: #fff;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.widget-stats .stats-info h4 {
+	font-size: 12px;
+	margin: 5px 0;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+}
+.widget-stats .stats-icon {
+	font-size: 42px;
+	height: 56px;
+	width: 56px;
+	text-align: center;
+	line-height: 56px;
+	margin-left: 15px;
+	color: #000;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	opacity: 0.15;
+}
+.widget-stats .stats-content {
+	position: relative;
+}
+.widget-stats .stats-info p {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.widget-stats .stats-link a {
+	display: block;
+	margin: 15px -15px -15px;
+	padding: 7px 15px;
+	background: rgba(0,0,0,0.4);
+	text-align: right;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+.widget-stats .stats-link a:hover, 
+.widget-stats .stats-link a:focus {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+.widget-stats .stats-icon.stats-icon-lg {
+	font-size: 128px;
+	top: 15px;
+	right: 0px;
+	color: #fff;
+	width: 128px;
+	height: 50px;
+	line-height: 50px;
+	text-shadow: 3px 7px rgba(0,0,0,0.25);
+}
+
+.widget-stats .stats-icon.stats-icon-lg i {
+	position: relative;
+}
+.widget-stats .stats-icon.stats-icon-square {
+	opacity: 1;
+	border-radius: 12px;
+	font-size: 42px;
+	top: 15px;
+	right: 15px;
+	height: 56px;
+	width: 56px;
+	text-align: center;
+	line-height: 56px;
+	margin-left: 15px;
+}
+.widget-stats .stats-title {
+	position: relative;
+	margin: 0 0 2px;
+	font-size: 16px;
+    font-weight: bold;
+}
+.widget-stats .stats-title,
+.widget-stats .stats-desc {
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+}
+.widget-stats .stats-desc {
+	margin: -5px 0 -3px;
+	font-weight: 300;
+}
+.widget-stats .stats-number {
+	font-size: 24px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.widget-stats .stats-progress {
+	background: rgba(0,0,0,0.5);
+	height: 2px;
+	margin: 0 0 15px;
+	border-radius: 3px;
+}
+.widget-stats .stats-progress.stats-progress-light {
+	background: rgba(255,255,255,0.3);
+}
+.widget-stats .stats-progress .progress-bar {
+	background: #fff;
+	border-radius: 0 3px 3px 0;
+}
+.widget-stats.text-inverse .stats-desc, 
+.widget-stats.text-inverse .stats-title {
+	color: rgba(0,0,0,.85);
+}
+.widget-stats.text-inverse .stats-number,
+.widget-stats.text-inverse .stats-desc {
+	letter-spacing: 0;
+	font-weight: 400;
+}
+.widget-stats.text-inverse .stats-title {
+	font-weight: 700;
+}
+.widget-stats.bg-white .stats-progress {
+	background: rgba(0,0,0,.1);
+}
+.widget-stats.bg-white .stats-progress .progress-bar {
+	background: #2d353c;
+}
