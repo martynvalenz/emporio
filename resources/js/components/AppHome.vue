@@ -7,25 +7,10 @@
 </template>
 
 <script>
-	import toolbar from './Layouts/Toolbar'
-	import AppFooter from './Layouts/AppFooter'
+	import toolbar from './Toolbar'
+	import AppFooter from './AppFooter'
 
 	export default{
 		components:{toolbar, AppFooter}
 	};
 </script>
-
-<style>
-	.centered{
-		text-align: center;
-	}
-
-	.router-linker:hover{
-		text-decoration: none
-	}
-
-	.parallax{
-		height: 100vh;
-		width: 100%;
-	}
-</style>
