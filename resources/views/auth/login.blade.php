@@ -65,7 +65,7 @@
 				<form action="{{ route('login') }}" method="post">
 				{{ csrf_field() }}
 					<div class="form-group m-b-20">
-						<input type="text" class="form-control form-control-lg {{ $errors->has('user') ? ' is-invalid' : '' }}" placeholder="Nombre de usuario" name="usuario" />
+						<input type="text" class="form-control form-control-lg {{ $errors->has('usuario') ? ' is-invalid' : '' }}" placeholder="Nombre de usuario" name="usuario" />
 					</div>
 
 					<div class="form-group m-b-20">

@@ -60,7 +60,7 @@ class LoginController extends Controller
     {
         $user = User::where('usuario',$request->usuario)->first();
 
-        if(count($user))
+        if($user)
         {
             if ($user->estatus == 0) 
             {
